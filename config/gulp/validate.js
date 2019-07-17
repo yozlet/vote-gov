@@ -12,5 +12,4 @@ function validate() {
 
 
 exports.validate = validate;
-
 gulp.task('validate',validate);
