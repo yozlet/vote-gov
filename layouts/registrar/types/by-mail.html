@@ -52,9 +52,7 @@
     </a>
     {{ end }}
   {{ end }}
-  <p>
-    {{ $translation.register.by_mail.download_others }}
-  </p>
+  <label class="usa-label">{{ $translation.register.by_mail.download_others }}</label>
   <ul class=".usa-list.usa-list--unstyled  mail-download-list">
     {{ range $key, $form := $.Site.Data.registration_forms }}
       {{ if ne $key $.Site.Params.language }}
@@ -64,5 +62,57 @@
       {{ end }}
     {{ end }}
   </ul>
+  <!-- Download form END -->
+
+  <!-- Email form BEGIN -->
+  <div id="email">
+    <hr><form class="usa-form">
+    <label class="usa-label" for="input-type-text">Enter your email to send the form (PDF) to yourself or someone else:</label>
+    <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
+    </form><br>
+    <div class="usa-button" onclick="clicked(event)" id="js-user-submit" type="submit">
+      Email the form (PDF)
+    </div>
+    <!-- Success alert  -->
+    <div class="usa-alert usa-alert--success" style="display: none;" id="valid">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">Form sent to email.</p>
+    </div>
+    </div>
+    <!-- Failure alert -->
+    <div class="usa-alert usa-alert--error" role="alert" style="display: none;" id="invalid">
+      <div class="usa-alert__body">
+      <p class="usa-alert__text">Please enter a valid email address.</p>
+    </div>
+    </div>
+  </div>
+
+  <script>
+  function clicked(ev)
+  {
+      var re = /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i;
+      var email = document.getElementById('input-type-text').value;
+      if(re.test(email)) {
+        document.getElementById('valid').style.display = 'block';
+        document.getElementById('invalid').style.display = 'none';
+      } else {
+        document.getElementById('invalid').style.display = 'block';
+        document.getElementById('valid').style.display = 'none';
+      }
+      //Send email directly
+      // window.open('mailto:' + email +
+      //             '?subject=' + 'National Voter Registration Application Form for U.S. Citizens (ENG)' +
+      //             '&body=Remember to register to vote!');
+  }
+  </script>
+
+  <script type="text/javascript">
+    //REFRESHES FOR RETURN KEY
+   document.getElementById('input-type-text').onkeypress = function(ev) {
+    //REPLACE WITH EXISTING FUNCTION
+    if(ev.which == 13) { clicked(ev); }
+   };
+ </script>
+
 </div>
-<!-- Download form END -->
+<!-- Email form END -->
