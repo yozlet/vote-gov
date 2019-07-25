@@ -13,31 +13,51 @@ var jsonModify= require("gulp-json-modify");
 var test_states = [ "alabama","alaska","arkansas"];
 
 
-gulp.task('translate-events' , function (done) {
-  gutil.log(gutil.colors.cyan('translate-events'), 'translating election events');
+function translateElections (done) {
+  gutil.log(gutil.colors.cyan('translate-elections'), 'translating election events');
   var stream = gulp.src('./data/elections/election_dates.json');
-  test_states.forEach(function (state, index){
-      primaryJson[state].important_dates.forEach(function(obj,index1) {
-          stream =  stream.pipe(replace(/"spanish_date_type": "(.*)"/, function (match, p1) {
-            var election = obj.date_type;
+  test_states.forEach(function (state){
+      primaryJson[state].elections.forEach(function(elections) {
+        elections.election_deadlines.forEach(function (deadlines){
+          stream =  stream.pipe(replace(/"spanish_election": "(.*)"/, function (match, p1) {
+            // console.log("match", match)
+            var election = elections.election_type;
             var spanish_title = spanishElectionNames[election].spanish;
-            return ('"spanish_date_type":' + '"' + spanish_title + '"');
+            // console.log(spanish_title);
+            return ('"spanish_election":' + '"' + spanish_title + '"');
           })).pipe(gulp.dest('./data/elections/'));
           return stream;
+        });
+      });
+  done();
+
+  });
+};
+
+function translateDeadlines (done){
+// gulp.task('' , function (done) {
+  gutil.log(gutil.colors.cyan('translate-deadlines'), 'translating deadlines events');
+  var stream = gulp.src('./data/elections/election_dates.json');
+  test_states.forEach(function (state, index){
+      primaryJson[state].elections.forEach(function(election) {
+      election.election_deadlines.forEach(function (deadlines){
+          stream =  stream.pipe(replace(/"spanish_deadline": "(.*)"/, function (match, p1) {
+            var deadline = deadlines.date_type;
+            var spanish_title = spanishElectionNames[deadline].spanish;
+            return ('"spanish_deadline":' + '"' + spanish_title + '"');
+          })).pipe(gulp.dest('./data/elections/'));
+          return stream;
+        })
       });
   done();
   });
-});
+};
 
-function foo(state,item,index,key){
-gutil.log(gutil.colors.cyan('modify'), item);
-   gulp.src('./data/elections/election_dates.json')
-  .pipe(jsonModify({
-    key: key,
-    value:"pizza"
-  }))
-    .pipe(gulp.dest('./data/elections/'));
-}
+// gulp.task('translate-events', gulp.series('translate-deadlines','translate-elections', function (done){
+//   gutil.log(gutil.colors.cyan('translate-events'), 'translating election events');
+//   done();
+// }));
+
 
 gulp.task('clean-translation', function () {
   gutil.log(gutil.colors.cyan('clean-translation'), 'Removing generated register/ files');
@@ -104,10 +124,14 @@ function populate(fileName,state ){
     .pipe(gulp.dest('./content/es/registrar'));
 }
 
-gulp.task('copy-translation', gulp.series( 'clean-translation', 'copy-content-spanish', 'copy-layouts-spanish', 'copy-links-spanish','translate-events', function (done) {
+exports.translateDeadlines  = translateDeadlines ;
+exports.translateElections = translateElections;
+gulp.task('copy-translation', gulp.series( 'clean-translation', 'copy-content-spanish', 'copy-layouts-spanish', 'copy-links-spanish',translateDeadlines, function (done) {
   gutil.log(
     gutil.colors.cyan('copy-translation'),
     'Copying files from content/ & layouts/ for translated URLs'
   );
   done();
 }));
+var translateEvents = gulp.series(translateElections,'copy-translation' );
+gulp.task('translate-all',translateEvents);
