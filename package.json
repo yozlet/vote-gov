@@ -33,6 +33,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "browserify": "^13.0.0",
+    "convert-csv-to-json": "0.0.15",
     "cross-spawn": "^4.0.0",
     "del": "^2.2.0",
     "eslint": "^4.19.1",
@@ -53,13 +54,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "gulp-csv-to-json": "^0.1.1",
     "gulp-scss-lint": "^1.0.0",
     "lodash": "^4.17.13"
-=======
-
-    "gulp-scss-lint": "^1.0.0"
->>>>>>> validate-json
   }
 }
