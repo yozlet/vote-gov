@@ -1,11 +1,9 @@
 {{ $translation := ( index $.Site.Data.translations $.Site.Params.language ) }}
 {{ partial "head.html" . }}
   <body class="page-vote">
+    <a class="usa-skipnav" href="#header">Skip main navigation</a>
     {{ partial "header.html" . }}
     <div class="page-vote-main" id="main" role="main">
-
-      <a class="usa-skipnav" href="#main-content">Skip main navigation</a>
-
       <div class="grid-container" id="main-content">
 
       <!-- Register BEGIN -->
@@ -40,7 +38,7 @@
       <!-- Already Registered BEGIN -->
       <section class="page-section registered" id="already-registered">
         <header>
-          <h1 class="usa-display vote-heading">{{ $translation.homepage.registered.header }}</h1>
+          <h2 class="usa-display vote-heading">{{ $translation.homepage.registered.header }}</h2>
         </header>
         <div class="voter-resources">
           <p>{{ $translation.homepage.registered.resources_intro }} <a href="{{ $translation.homepage.registered.resources_link_url }}">{{ $translation.homepage.registered.resources_link_text }}</a> {{ $translation.homepage.registered.resources_on }} <a href="{{ $translation.homepage.registered.resources_website_url }}">{{ $translation.homepage.registered.resources_website }}:</a></p>
