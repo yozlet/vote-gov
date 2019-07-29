@@ -6,9 +6,9 @@
     <div class="site-logo" id="logo">
       <h1>
       {{ if eq $.Site.Params.language "english" }}
-        <a href="{{ .Site.BaseURL }}" accesskey="1" title="Home" aria-label="Home">
+        <a href="{{ .Site.BaseURL }}" accesskey="1" title="vote.gov" aria-label="vote.gov">
       {{ else }}
-        <a href="{{ .Site.BaseURL }}/es/" accesskey="1" title="Home" aria-label="Home">
+        <a href="{{ .Site.BaseURL }}/es/" accesskey="1" title="vote.gov" aria-label="vote.gov">
       {{ end }}
           {{ $translation.micro_copy.domain }}
         </a>
