@@ -4,6 +4,7 @@ external_link = "https://registertovote.sos.ga.gov/GAOLVR/welcome.do"
 registration_type = "online"
 state_abbreviation = "GA"
 title = "Georgia"
+english_only = true
+select_spanish = false
 
 +++
-

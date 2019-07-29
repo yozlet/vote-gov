@@ -5,5 +5,6 @@ registration_type = "in-person"
 state_abbreviation = "VI"
 title = "U.S. Virgin Islands"
 english_only = true
+select_spanish = false
 
 +++

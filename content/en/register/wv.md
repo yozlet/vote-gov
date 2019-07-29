@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "WV"
 title = "West Virginia"
 english_only = true
+select_spanish = false
 
 +++

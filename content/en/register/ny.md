@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "ny"
 title = "New York"
 english_only = true
+select_spanish = false
 
 +++

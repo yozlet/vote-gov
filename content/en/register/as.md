@@ -5,5 +5,6 @@ registration_type = "in-person"
 state_abbreviation = "AS"
 title = "American Samoa"
 english_only = true
+select_spanish = false
 
 +++

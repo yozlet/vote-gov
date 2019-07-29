@@ -4,6 +4,7 @@ external_link = "https://olvr.hawaii.gov/"
 registration_type = "online"
 state_abbreviation = "HI"
 title = "Hawai"
+english_only = true
+select_spanish = false
 
 +++
-

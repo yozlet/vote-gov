@@ -4,5 +4,7 @@ external_link = "https://dmv.ny.gov/org/more-info/electronic-voter-registration-
 registration_type = "online"
 state_abbreviation = "ny"
 title = "Nueva York"
-+++
+english_only = true
+select_spanish = false
 
++++

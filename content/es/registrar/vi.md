@@ -4,6 +4,7 @@ external_link = "https://www.vivote.gov/voters/register-vote"
 registration_type = "in-person"
 state_abbreviation = "VI"
 title = "Islas Vírgenes de EE. UU."
+english_only = true
+select_spanish = false
 
 +++
-

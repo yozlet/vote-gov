@@ -4,6 +4,7 @@ external_link = "https://apps.idahovotes.gov/OnlineVoterRegistration"
 registration_type = "online"
 state_abbreviation = "ID"
 title = "Idaho"
+english_only = true
+select_spanish = false
 
 +++
-

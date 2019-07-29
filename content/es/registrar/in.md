@@ -4,6 +4,7 @@ external_link = "https://indianavoters.in.gov/"
 registration_type = "online"
 state_abbreviation = "IN"
 title = "Indiana"
+english_only = true
+select_spanish = false
 
 +++
-

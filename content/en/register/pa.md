@@ -4,6 +4,7 @@ external_link = "https://www.pavoterservices.state.pa.us/Pages/VoterRegistration
 registration_type = "online"
 state_abbreviation = "PA"
 title = "Pennsylvania"
-english_only = false 
+english_only = false
+select_spanish = true
 
 +++

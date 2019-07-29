@@ -4,6 +4,7 @@ external_link = "https://olvr.sos.state.oh.us/"
 registration_type = "online"
 state_abbreviation = "OH"
 title = "Ohio"
+english_only = false
+select_spanish = true 
 
 +++
-

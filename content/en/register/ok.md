@@ -4,6 +4,7 @@ external_link = ""
 registration_type = "by-mail"
 state_abbreviation = "OK"
 title = "Oklahoma"
-english_only = false 
+english_only = false
+select_spanish = false
 
 +++

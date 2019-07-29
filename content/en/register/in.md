@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "IN"
 title = "Indiana"
 english_only = true
+select_spanish = false
 
 +++

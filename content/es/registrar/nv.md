@@ -4,6 +4,7 @@ external_link = "https://nvsos.gov/sosvoterservices/Registration/step1.aspx"
 registration_type = "online"
 state_abbreviation = "NV"
 title = "Nevada"
+english_only = true
+select_spanish = false
 
 +++
-

@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "LA"
 title = "Louisiana"
 english_only = true
+select_spanish = false
 
 +++

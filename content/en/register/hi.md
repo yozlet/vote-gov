@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "HI"
 title = "Hawaii"
 english_only = true
+select_spanish = false
 
 +++

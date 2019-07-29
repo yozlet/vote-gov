@@ -4,6 +4,7 @@ external_link = "https://sos.iowa.gov/elections/voterinformation/voterregistrati
 registration_type = "online"
 state_abbreviation = "IA"
 title = "Iowa"
+english_only = true
+select_spanish = false
 
 +++
-

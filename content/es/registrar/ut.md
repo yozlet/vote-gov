@@ -4,6 +4,7 @@ external_link = "https://secure.utah.gov/voterreg/index.html"
 registration_type = "online"
 state_abbreviation = "UT"
 title = "Utah"
+english_only = true
+select_spanish = false
 
 +++
-

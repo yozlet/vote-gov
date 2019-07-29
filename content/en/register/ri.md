@@ -5,5 +5,6 @@ registration_type = "online"
 state_abbreviation = "RI"
 title = "Rhode Island"
 english_only = true
+select_spanish = false
 
 +++

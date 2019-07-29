@@ -4,6 +4,7 @@ external_link = "https://www.sec.state.ma.us/ovr/"
 registration_type = "online"
 state_abbreviation = "MA"
 title = "Massachusetts"
-english_only = false 
+english_only = false
+select_spanish = true
 
 +++

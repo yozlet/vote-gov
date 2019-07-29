@@ -4,6 +4,7 @@ external_link = "https://vrsws.sos.ky.gov/ovrweb/"
 registration_type = "online"
 state_abbreviation = "KY"
 title = "Kentucky"
+english_only = true
+select_spanish = false
 
 +++
-

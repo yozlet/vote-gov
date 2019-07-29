@@ -5,6 +5,7 @@ registration_type = "online"
 state_abbreviation = "CO"
 title = "Colorado"
 english_only = false
+select_spanish = false
 
 
 +++

@@ -4,5 +4,7 @@ external_link = "https://voterregistration.alaska.gov/"
 registration_type = "online"
 state_abbreviation = "AK"
 title = "Alaska"
+english_only = true
+select_spanish = false
 
 +++

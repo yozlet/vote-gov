@@ -5,5 +5,6 @@ registration_type = "in-person"
 state_abbreviation = "MP"
 title = "Northern Mariana Islands"
 english_only = true
+select_spanish = false
 
 +++
