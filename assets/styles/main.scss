@@ -56,7 +56,7 @@ h1 {
 @import './component/disclaimer';
 
 .site-logo {
-  h1 {
+  .main {
     @include u-margin-top (2);
     @include u-margin-bottom (neg-2);
     font-family: family('sans');
