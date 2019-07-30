@@ -4,12 +4,12 @@
     <a class="usa-skipnav" href="#header">Skip main navigation</a>
     {{ partial "header.html" . }}
     <div class="page-vote-main" id="main" role="main">
-      <div class="grid-container" id="main-content">
+      <div class="grid-container">
 
       <!-- Register BEGIN -->
       <section class="page-section register" id="register">
         <header>
-          <h1 class="usa-display vote-heading">{{ $translation.homepage.header }}</h1>
+          <h1 class="usa-display vote-heading" id="main-content">{{ $translation.homepage.header }}</h1>
         </header>
         <form class="form-register" method="get" id="register">
           <p>{{ $translation.homepage.state_selection.label }}</p>

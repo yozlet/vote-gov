@@ -1,16 +1,16 @@
 {{ $translation := ( index $.Site.Data.translations $.Site.Params.language ) }}
 
-<a class="usa-skipnav" href="#main-content">Skip main navigation</a>      
+<a class="usa-skipnav" href="#main-content">Skip main navigation</a>
 {{ partial "head.html" . }}
   <body class="page-register-single">
     {{ partial "header.html" . }}
     <div class="page-vote-404" id="main" role="main">
 
-      <section class="grid-container page-inner" id="main-content">
+      <section class="grid-container page-inner">
         <div class="grid-row">
           <div lang="en" class="grid-col-6">
             <span class="usa-label">English</span>
-            <h1>Oops! 404 error</h1>
+            <h1 id="main-content">Oops! 404 error</h1>
 
             <p class="usa-intro">We’re sorry, but the page you’re looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
 
