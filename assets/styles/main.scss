@@ -8,7 +8,8 @@ $font-light: 300;
 $inner-box-width: 25rem;
 $color-blue-dark: #003366;
 $color-blue-light: #0071bc;
-$color-button: #d1f7ff;
+$color-button: #207fa2;
+$color-button-hover: #d1f7ff;
 $color-focus: #ff8c00;
 
 // Styles --------------- //
@@ -43,8 +44,9 @@ h1 {
 }
 
 .usa-button .usa-button--accent-cool {
+  color: $color-button;
   &:hover {
-    color: $color-button;
+    color: $color-button-hover;
   }
 }
 
