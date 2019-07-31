@@ -1,30 +1,30 @@
 {
   "Absentee Ballot Request Deadline":  {
-    "spanish":"Fecha límite de solicitud de boleta de votación en ausencia"
+    "spanish":"Fecha Límite de Solicitud de Boleta de Votación en Ausencia"
   },
 "Absentee Ballot Return Deadline" : {
-  "spanish": "Plazo de devolución de la boleta de votación en ausencia"
+  "spanish": "Fecha Límite para Entregar la Boleta de Votación en Ausencia"
 },
 "Absentee Ballot Online Deadline" : {
-  "spanish":"Fecha límite de boleta en línea"
+  "spanish":"Fecha Límite para la Boleta de Votación en Ausencia en Línea"
   },
   "Voter Registration Deadline":{
-    "spanish"  : "Fecha límite de inscripción de votantes"
+    "spanish":"Fecha Límite de Inscripción de Votantes"
   },
   "Voter Registration Deadline (In Person)":{
-    "spanish" :"Fecha límite de inscripción de votantes (En Persona)"
+    "spanish" :"Fecha Límite de Inscripción de Votantes (En persona)"
   },
   "Voter Registration Deadline (By Mail)" :{
-    "spanish" :"Fecha límite de inscripción de votantes (Por Correo)"
+    "spanish" :"Fecha Límite de Inscripción de Votantes (Por correo)"
   },
   "Voter Registration Deadline (Online)" :{
-    "spanish" :"Fecha límite de inscripción de votantes (En Línea)"
+    "spanish" :"Fecha Límite de Inscripción de Votantes (Por internet)"
   },
   "Early Voting/ In Person Absentee Voting" :{
-    "spanish" : "Votación anticipada / Votación en persona en ausencia"
+    "spanish" : "Votación Anticipada en Persona por Voto en Ausencia"
   },
   "Presidential Preference Primary Election" :{
-    "spanish" :"Preferencia Presidencial Elección Primaria"
+    "spanish" :"Elección Primaria de Preferencia Presidencial"
   },
   "Primary Election" :{
     "spanish" : "Elección Primaria"
@@ -39,12 +39,12 @@
      "spanish" : "Elección General Especial"
  },
   "Special Runoff Election"  :{
-    "spanish" : "Elección de Escorrentía Especial"
+    "spanish" : "Elección Especial de Segunda Vuelta"
   },
   "Primary Runoff Election" :{
-    "spanish" : "Elección Primaria de Escorrentía"
+    "spanish" : "Elección Primaria de Segunda Vuelta"
   },
   "Runoff Election" :{
-    "spanish" : "Elección de Desempate"
+    "spanish" : "Elección de Segunda Vuelta"
   }
 }
