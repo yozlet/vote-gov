@@ -2,7 +2,7 @@
 
 <div class="accordions">
   <h2>{{$translation.accordion.header}}</h2>
-  <button onclick="accordion()" id="b" class="usa-button usa-button--outline">Open All</button>
+  <button onclick="accordion()" id="b" class="usa-button usa-button--outline">{{$translation.accordion.open_all}}</button>
   <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
     <div id="deadlines"></div>
       <script type="text/javascript">
@@ -44,7 +44,7 @@
       }
 
       function open() {
-        return (document.getElementById('b').innerHTML == 'Close All'? false : true);
+        return (document.getElementById('b').innerHTML == {{$translation.accordion.close_all}}? false : true);
       }
 
       function accordion() {
@@ -61,7 +61,7 @@
             dropdown.setAttribute('hidden', 'true');
           }
         }
-        document.getElementById('b').innerHTML = (open()? 'Close All': 'Open All');
+        document.getElementById('b').innerHTML = (open()? {{$translation.accordion.close_all}}: {{$translation.accordion.open_all}});
       }
 
     </script>

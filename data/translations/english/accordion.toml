@@ -1,2 +1,4 @@
 header ="2020 Federal Elections Dates & Deadlines"
 date = "date:"
+open_all = "Open All"
+close_all= " Close All"
