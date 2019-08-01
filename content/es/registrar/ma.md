@@ -6,5 +6,6 @@ state_abbreviation = "MA"
 title = "Massachusetts"
 english_only = false
 select_spanish = true
+spanish_form = false
 
 +++

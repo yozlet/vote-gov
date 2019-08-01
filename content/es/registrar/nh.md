@@ -6,5 +6,5 @@ state_abbreviation = "NH"
 title = "Nuevo Hampshire"
 english_only = true
 select_spanish = false
-
+spanish_form = false
 +++

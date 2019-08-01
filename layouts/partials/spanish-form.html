@@ -1,12 +1,11 @@
 {{ $translation := ( index $.Site.Data.translations $.Site.Params.language ) }}
-
 <div class="grid-container page-inner mail-steps">
   <h1>
     {{ $translation.register.heading }}
   </h1>
-  <p class="usa-intro">
+  <a href="{{ .Params.external_link }}?ref={{ $.Site.Params.Referrer_Short_Code }}" class= "usa-intro">
     {{ replace $translation.register.by_mail.body "%state_name%" ( title .Title ) }}
-  </p>
+  </a>
   <!-- Steps BEGIN -->
   <div class="usa-graphic-list">
     <div class="grid-row">

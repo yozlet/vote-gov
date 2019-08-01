@@ -1,10 +1,8 @@
 {{ $translation := ( index $.Site.Data.translations $.Site.Params.language ) }}
 <!-- Register BEGIN -->
-
-{{ if and (eq $.Site.Params.language "spanish") (eq .Params.spanish_form  true) }}
-  {{ partial "spanish-form.html" . }}
+{{ if and (eq $.Site.Params.language "spanish") (eq .Params.spanish_form true) }}
+  {{ partial "spanish-form.html" .}}
 {{ else }}
-
 <div class="grid-container page-inner main-content">
   <header>
     <h1>
@@ -27,5 +25,7 @@
     </a>
   </p>
 </div>
-{{end}}
 <!-- Register END -->
+
+
+{{end}}

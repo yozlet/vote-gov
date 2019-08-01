@@ -6,5 +6,6 @@ state_abbreviation = "KY"
 title = "Kentucky"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

@@ -6,5 +6,6 @@ state_abbreviation = "VI"
 title = "Islas Vírgenes de EE. UU."
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

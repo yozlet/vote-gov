@@ -6,5 +6,6 @@ state_abbreviation = "DC"
 title = "Distrito de Columbia"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

@@ -7,5 +7,6 @@ title = "Alaska"
 english_only = true
 select_spanish = false
 spanish_form = true
+spanish_form_link ="http://www.elections.alaska.gov/doc/forms/C03-S.pdf"
 
 +++

@@ -6,5 +6,6 @@ state_abbreviation = "AS"
 title = "Samoa Americana"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

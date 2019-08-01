@@ -6,5 +6,6 @@ state_abbreviation = "OK"
 title = "Oklahoma"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++

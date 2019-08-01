@@ -5,6 +5,7 @@ registration_type = "online"
 state_abbreviation = "WI"
 title = "Wisconsin"
 english_only = false
-select_spanish = false 
+select_spanish = false
+spanish_form = false
 
 +++

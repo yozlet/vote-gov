@@ -6,5 +6,6 @@ state_abbreviation = "MP"
 title = "Islas Marianas del Norte"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

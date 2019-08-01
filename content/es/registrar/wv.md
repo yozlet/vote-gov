@@ -6,5 +6,6 @@ state_abbreviation = "WV"
 title = "Virginia Occidental"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

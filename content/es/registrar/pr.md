@@ -6,5 +6,6 @@ state_abbreviation = "PR"
 title = "Puerto Rico"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++

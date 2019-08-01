@@ -6,5 +6,6 @@ state_abbreviation = "SD"
 title = "Dakota del Sur"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++

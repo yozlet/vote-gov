@@ -7,5 +7,6 @@ title = "Virginia"
 english_only = true
 select_spanish = false
 spanish_form = true
+spanish_form_link= "https://www.elections.virginia.gov/media/formswarehouse/VERIS-Voter-Registration/Applications/Voter-Registration-Application-SPANISH.pdf"
 
 +++

@@ -6,4 +6,5 @@ state_abbreviation = "MD"
 title = "Maryland"
 english_only = false
 select_spanish = true
+spanish_form = false
 +++

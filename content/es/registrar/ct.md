@@ -6,5 +6,6 @@ state_abbreviation = "CT"
 title = "Connecticut"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++

@@ -5,6 +5,7 @@ registration_type = "by-mail"
 state_abbreviation = "NC"
 title = "Carolina del Norte"
 english_only = false
-select_spanish = false 
+select_spanish = false
+spanish_form = false
 
 +++

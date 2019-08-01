@@ -7,5 +7,6 @@ title = "Minnesota"
 english_only = true
 select_spanish = false
 spanish_form = true
+spanish_form_link ="https://www.sos.state.mn.us/media/1589/spanish-voter-registration-2016.pdf"
 
 +++
