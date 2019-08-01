@@ -3,7 +3,7 @@
   <h1>
     {{ $translation.register.heading }}
   </h1>
-  <a href="{{ .Params.external_link }}?ref={{ $.Site.Params.Referrer_Short_Code }}" class= "usa-intro">
+  <a href="{{ .Params.spanish_form_link }}?ref={{ $.Site.Params.Referrer_Short_Code }}" class= "usa-intro">
     {{ replace $translation.register.by_mail.body "%state_name%" ( title .Title ) }}
   </a>
   <!-- Steps BEGIN -->
