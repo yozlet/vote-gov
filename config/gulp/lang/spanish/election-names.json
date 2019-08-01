@@ -1,50 +1,51 @@
+
 {
   "Absentee Ballot Request Deadline":  {
-    "spanish":"Fecha Límite de Solicitud de Boleta de Votación en Ausencia"
+    "spanish":"Fecha límite de solicitud de boleta de votación en ausencia"
   },
 "Absentee Ballot Return Deadline" : {
-  "spanish": "Fecha Límite para Entregar la Boleta de Votación en Ausencia"
+  "spanish":"Fecha límite para entregar la boleta de votación en ausencia"
 },
 "Absentee Ballot Online Deadline" : {
-  "spanish":"Fecha Límite para la Boleta de Votación en Ausencia en Línea"
+  "spanish":"Fecha límite para la boleta de votación en ausencia en línea"
   },
   "Voter Registration Deadline":{
-    "spanish":"Fecha Límite de Inscripción de Votantes"
+    "spanish":"Fecha límite de inscripción de votantes"
   },
   "Voter Registration Deadline (In Person)":{
-    "spanish" :"Fecha Límite de Inscripción de Votantes (En persona)"
+    "spanish":"Fecha límite de inscripción de votantes (en persona)"
   },
   "Voter Registration Deadline (By Mail)" :{
-    "spanish" :"Fecha Límite de Inscripción de Votantes (Por correo)"
+    "spanish":"Fecha límite de inscripción de votantes (por correo)"
   },
   "Voter Registration Deadline (Online)" :{
-    "spanish" :"Fecha Límite de Inscripción de Votantes (Por internet)"
+    "spanish":"Fecha límite de inscripción de votantes (por internet)"
   },
   "Early Voting/ In Person Absentee Voting" :{
-    "spanish" : "Votación Anticipada en Persona por Voto en Ausencia"
+    "spanish":"Votación anticipada en persona por voto en ausencia"
   },
   "Presidential Preference Primary Election" :{
-    "spanish" :"Elección Primaria de Preferencia Presidencial"
+    "spanish":"Elección primaria de preferencia presidencial"
   },
   "Primary Election" :{
-    "spanish" : "Elección Primaria"
+    "spanish":"Elección primaria"
   },
-  "Election" :{
-     "spanish" : "Elección"
+  " General Election" :{
+     "spanish":"Elección general"
    },
   "Special Election" :{
-    "spanish" : "Election Especial"
+    "spanish":"Election especial"
   },
   "Special General Election" :{
-     "spanish" : "Elección General Especial"
+     "spanish":"Elección general especial"
  },
   "Special Runoff Election"  :{
-    "spanish" : "Elección Especial de Segunda Vuelta"
+    "spanish":"Elección especial de segunda vuelta"
   },
   "Primary Runoff Election" :{
-    "spanish" : "Elección Primaria de Segunda Vuelta"
+    "spanish":"Elección primaria de segunda vuelta"
   },
   "Runoff Election" :{
-    "spanish" : "Elección de Segunda Vuelta"
+    "spanish":"Elección de segunda vuelta"
   }
 }

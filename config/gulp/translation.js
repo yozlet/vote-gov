@@ -19,7 +19,7 @@ function translateElections (done) {
   test_states.forEach(function (state){
       primaryJson[state].elections.forEach(function(elections) {
         elections.election_deadlines.forEach(function (deadlines){
-          stream =  stream.pipe(replace(/"spanish_election": "(.*)"/, function (match, p1) {
+          stream =  stream.pipe(replace(/"spanish_election":"(.*)"/, function (match, p1) {
             // console.log("match", match)
             var election = elections.election_type;
             var spanish_title = spanishElectionNames[election].spanish;
@@ -41,7 +41,7 @@ function translateDeadlines (done){
   test_states.forEach(function (state, index){
       primaryJson[state].elections.forEach(function(election) {
       election.election_deadlines.forEach(function (deadlines){
-          stream =  stream.pipe(replace(/"spanish_deadline": "(.*)"/, function (match, p1) {
+          stream =  stream.pipe(replace(/"spanish_deadline":"(.*)"/, function (match, p1) {
             var deadline = deadlines.date_type;
             var spanish_title = spanishElectionNames[deadline].spanish;
             return ('"spanish_deadline":' + '"' + spanish_title + '"');
