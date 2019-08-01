@@ -6,5 +6,7 @@ state_abbreviation = "VI"
 title = "U.S. Virgin Islands"
 english_only = true
 select_spanish = false
+spanish_form = false
+spanish_form = false
 
 +++

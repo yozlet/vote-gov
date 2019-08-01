@@ -5,6 +5,7 @@ registration_type = "online"
 state_abbreviation = "OH"
 title = "Ohio"
 english_only = false
-select_spanish = true 
+select_spanish = true
+spanish_form = false
 
 +++

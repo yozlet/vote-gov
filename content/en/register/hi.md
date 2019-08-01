@@ -6,5 +6,6 @@ state_abbreviation = "HI"
 title = "Hawaii"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

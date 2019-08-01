@@ -6,5 +6,6 @@ state_abbreviation = "WA"
 title = "Washington"
 english_only = false
 select_spanish = true
+spanish_form = false
 
 +++

@@ -6,5 +6,6 @@ state_abbreviation = "NE"
 title = "Nebraska"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

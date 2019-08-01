@@ -5,6 +5,7 @@ registration_type = "by-mail"
 state_abbreviation = "NC"
 title = "North Carolina"
 english_only = false
-select_spanish = false 
+select_spanish = false
+spanish_form = false
 
 +++

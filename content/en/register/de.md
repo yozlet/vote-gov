@@ -6,5 +6,6 @@ state_abbreviation = "DE"
 title = "Delaware"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

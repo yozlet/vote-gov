@@ -6,5 +6,6 @@ state_abbreviation = "NJ"
 title = "New Jersey"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++

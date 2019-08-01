@@ -6,5 +6,6 @@ state_abbreviation = "ID"
 title = "Idaho"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

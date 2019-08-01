@@ -6,6 +6,7 @@ state_abbreviation = "CO"
 title = "Colorado"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 
 +++

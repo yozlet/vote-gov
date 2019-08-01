@@ -5,7 +5,8 @@ registration_type = "online"
 state_abbreviation = "CA"
 title = "California"
 english_only = false
-select_spanish = false 
+select_spanish = false
+spanish_form = false 
 
 
 +++

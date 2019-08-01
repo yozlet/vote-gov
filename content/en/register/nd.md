@@ -4,6 +4,8 @@ external_link = "https://vip.sos.nd.gov/PortalList.aspx"
 registration_type = "not-needed"
 state_abbreviation = "ND"
 title = "North Dakota"
-english_only = true 
+english_only = true
+select_spanish = false
+spanish_form = false
 
 +++

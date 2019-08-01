@@ -6,5 +6,6 @@ state_abbreviation = "IN"
 title = "Indiana"
 english_only = true
 select_spanish = false
+spanish_form = false
 
 +++

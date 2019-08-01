@@ -6,5 +6,6 @@ state_abbreviation = "VA"
 title = "Virginia"
 english_only = true
 select_spanish = false
+spanish_form = true
 
 +++

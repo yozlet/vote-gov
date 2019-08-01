@@ -6,5 +6,6 @@ state_abbreviation = "PA"
 title = "Pennsylvania"
 english_only = false
 select_spanish = true
+spanish_form = false
 
 +++

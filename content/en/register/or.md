@@ -6,5 +6,6 @@ state_abbreviation = "OR"
 title = "Oregon"
 english_only = false
 select_spanish = false
+spanish_form = false
 
 +++
