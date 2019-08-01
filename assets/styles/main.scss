@@ -51,7 +51,7 @@ h1 {
   }
 }
 
-.input:focus {
+:focus {
     outline: 0.25rem solid $color-focus;
 }
 
@@ -59,10 +59,13 @@ h1 {
 @import './component/disclaimer';
 
 .site-logo {
+  .usa-display {
+    padding-top: 0.5rem;
+  }
+
   .main {
     @include u-margin-top (2);
     @include u-margin-bottom (neg-2);
-    font-family: family('sans');
     font-size: size('body', 'lg');
   }
 
