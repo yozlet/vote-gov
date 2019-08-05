@@ -9,12 +9,10 @@ let fileOutputName = './data/sample.json';
 
 
 
-
-
 function validate() {
   gutil.log(gutil.colors.cyan('validate'), 'Validating json data');
-    return gulp.src('./config/gulp/dates/dates.json')
-      .pipe(jsonSchema("./config/gulp/dates/dates_schema.json", {verbose:true, loadMissingSchemas:true}));
+    return gulp.src('./data/elections/election_dates.json')
+      .pipe(jsonSchema("./data/elections/dates_schema.json", {verbose:true, loadMissingSchemas:true}));
 }
 
 function csvToJson (done){
