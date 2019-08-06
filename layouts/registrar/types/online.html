@@ -16,10 +16,10 @@
     <a href="{{ .Params.external_link }}?ref={{ $.Site.Params.Referrer_Short_Code }}">
       {{ replace $translation.register.online.link "%state_name%" ( title .Title ) }}
       {{ if and (eq $.Site.Params.language "spanish") (eq .Params.english_only true) }}
-        {{ $translation.register.english_only }}
+          {{ $translation.register.english_only }}
       {{ else }}
-      {{ if and (eq $.Site.Params.language "spanish") (eq .Params.select_spanish true) }}
-        {{ $translation.register.select_spanish }}
+        {{ if and (eq $.Site.Params.language "spanish") (eq .Params.select_spanish true) }}
+          {{ $translation.register.select_spanish }}
       {{end}}
       {{ end }}
     </a>
