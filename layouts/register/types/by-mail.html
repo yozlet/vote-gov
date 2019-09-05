@@ -47,7 +47,7 @@
 <div class="grid-container page-inner mail-download">
   {{ range $key, $form := $.Site.Data.registration_forms }}
     {{ if eq $key $.Site.Params.language }}
-    <a class="usa-button" href="{{ $form.file_path }}" target="_blank">
+    <a id="documentDownload" class="usa-button" href="{{ $form.file_path }}" target="_blank">
       {{ $translation.register.by_mail.download }}
     </a>
     {{ end }}
@@ -62,6 +62,8 @@
       {{ end }}
     {{ end }}
   </ul>
+
+  
   <!-- Download form END -->
 
   <!-- Email form BEGIN -->
@@ -69,9 +71,23 @@
     <hr><form class="usa-form">
     <label class="usa-label" for="input-type-text">Enter your email to send the form (PDF) to yourself or someone else:</label>
     <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
+     <div class="g-recaptcha" data-sitekey="6LdMpLUUAAAAABA1trW4myMfF3ijM8zsDpU2USmZ" data-callback='clicked'
+      style="transform:scale(1.06);-webkit-transform:scale(1.06);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
     <input class="usa-button" onclick="clicked(event)" id="js-user-submit" type="submit" value="Email the form (PDF)">
     </input>
     </form><br>
+       <!-- Recaptcha Not Provided alert  -->
+    <div class="usa-alert usa-alert--error" style="display: none;" id="recap">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">please verify you are not a Robot</p>
+    </div>
+    </div>
+      <!-- API Not sending Email alert  -->
+    <div class="usa-alert usa-alert--error" style="display: none;" id="apiError">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">Not able to Send Emails, Try Again</p>
+    </div>
+    </div>
 
     <!-- Success alert  -->
     <div class="usa-alert usa-alert--success" style="display: none;" id="valid">
@@ -86,24 +102,58 @@
     </div>
     </div>
   </div>
-
+   <script src="https://www.google.com/recaptcha/api.js " ></script>
+    
   <script>
   function clicked(ev)
   {
+
       ev.preventDefault();
+
       var re = /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i;
       var email = document.getElementById('input-type-text').value;
-      if(re.test(email)) {
-        document.getElementById('valid').style.display = 'block';
-        document.getElementById('invalid').style.display = 'none';
-      } else {
+
+      if(!re.test(email)) {
         document.getElementById('invalid').style.display = 'block';
         document.getElementById('valid').style.display = 'none';
+        document.getElementById('apiError').style.display = 'none';
+        return false;
+
       }
-      //Send email directly
-      // window.open('mailto:' + email +
-      //             '?subject=' + 'National Voter Registration Application Form for U.S. Citizens (ENG)' +
-      //             '&body=Remember to register to vote!');
+      if(grecaptcha.getResponse().length == 0) { 
+        document.getElementById('recap').style.display = 'block';
+        document.getElementById('invalid').style.display = 'none';
+        document.getElementById('apiError').style.display = 'none';
+        document.getElementById('valid').style.display = 'none';
+        return false;
+      }
+        //post to APi
+
+      var xhr = new XMLHttpRequest();
+      var url = "https://cojk706yue.execute-api.us-east-1.amazonaws.com/prod/gsaApi?email="+email+"&recaPtcha="+response+"&document="+documentDownload;
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");  
+      xhr.send();
+
+
+      xhr.onreadystatechange = function() {    
+        if (this.readyState == 4 && this.status == 200) {
+           document.getElementById('valid').style.display = 'block';
+           document.getElementById('invalid').style.display = 'none';
+           document.getElementById('apiError').style.display = 'none';
+        }
+        else {
+           document.getElementById('apiError').style.display = 'block';
+           document.getElementById('invalid').style.display = 'none';
+           document.getElementById('recap').style.display = 'none';
+           document.getElementById('valid').style.display = 'none';
+           document.getElementById("input-type-text").value = "";
+          grecaptcha.reset();
+
+        }
+          
+      }
+     
   }
 
   document.getElementById('input-type-text').onsubmit = function(ev) {
