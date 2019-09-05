@@ -120,6 +120,7 @@
         return false;
 
       }
+      var response = grecaptcha.getResponse();
       if(grecaptcha.getResponse().length == 0) { 
         document.getElementById('recap').style.display = 'block';
         document.getElementById('invalid').style.display = 'none';
