@@ -131,7 +131,7 @@
         //post to APi
 
       var xhr = new XMLHttpRequest();
-      var url = "https://cojk706yue.execute-api.us-east-1.amazonaws.com/prod/gsaApi?email="+email+"&recaPtcha="+response+"&document="+documentDownload;
+      var url = "https://4e0p6yexbi.execute-api.us-east-1.amazonaws.com/v1?email="+email+"&recaPtcha="+response+"&document="+documentDownload;
       xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-Type", "application/json");  
       xhr.send();
