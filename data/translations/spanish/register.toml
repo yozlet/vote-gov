@@ -3,15 +3,10 @@ english_only = "(en inglés)"
 select_spanish ="- seleccione la opción para español"
 
 [by_mail]
-body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal."
-download = "Descargar el formulario (PDF)"
-download_others = "Descargue el formulario en otros idiomas:"
-step_one_label = "Paso 1"
-step_one = "Llene su registro de votante."
-step_two_label = "Paso 2"
-step_two = "Envíelo por correo postal a la oficina electoral de su estado."
-step_three_label = "Paso 3"
-step_three = "¡Vote en las próximas elecciones!"
+body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal  Complete y envíe su registro de votante a la oficina electoral de su estado.."
+download = "Descargue el formulario (PDF)"
+e-mail = "Envíeme el formulario en PDF"
+link = "También puede inscribirse por internet en el sitio web electoral de %state_name% (en inglés)."
 
 [in_person]
 body = "%state_name% requiere que sus residentes se inscriban para votar en persona en su oficina electoral local."
