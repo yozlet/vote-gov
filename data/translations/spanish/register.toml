@@ -3,7 +3,7 @@ english_only = "(en inglés)"
 select_spanish ="- seleccione la opción para español"
 
 [by_mail]
-body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal  Complete y envíe su registro de votante a la oficina electoral de su estado.."
+body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal. Complete y envíe su registro de votante a la oficina electoral de su estado."
 download = "Descargue el formulario (PDF)"
 e-mail = "Envíeme el formulario en PDF"
 link = "También puede inscribirse por internet en el sitio web electoral de %state_name% (en inglés)."
