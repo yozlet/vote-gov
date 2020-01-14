@@ -9,8 +9,8 @@ e-mail = "Envíeme el formulario en PDF"
 link = "También puede inscribirse por internet en el sitio web electoral de %state_name% (en inglés)."
 
 [in_person]
-body = "%state_name% requiere que sus residentes se inscriban para votar en persona en su oficina electoral local."
-link = "Visite el sitio web de la oficina electoral de %state_name% para averiguar cómo registrarse para votar"
+body = "Inscríbase en persona en la oficina electoral local. Para averiguar cómo inscribirse," 
+link =  visite el sitio web de la oficina electoral de %state_name% "
 
 [not_needed]
 heading = "No requiere estar registrado(a) para votar"
