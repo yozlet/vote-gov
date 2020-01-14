@@ -19,4 +19,4 @@ link = "Ver la guía para votar en %state_name%"
 
 [online]
 body = "  "
-link = "Empiece su inscripción por internet en el sitio web electoral de %state_name% (en inglés)."
+link = "Empiece su inscripción por internet en el sitio web electoral de %state_name%."
