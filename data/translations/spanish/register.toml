@@ -1,27 +1,22 @@
 heading = "Inscríbase para votar"
 english_only = "(en inglés)"
-select_spanish ="- seleccione la opción para español"
+select_spanish = "- seleccione la opción para español"
 
 [by_mail]
-body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal."
-download = "Descargar el formulario (PDF)"
-download_others = "Descargue el formulario en otros idiomas:"
-step_one_label = "Paso 1"
-step_one = "Llene su registro de votante."
-step_two_label = "Paso 2"
-step_two = "Envíelo por correo postal a la oficina electoral de su estado."
-step_three_label = "Paso 3"
-step_three = "¡Vote en las próximas elecciones!"
+body = "Los residentes de %state_name% pueden inscribirse para votar por correo postal. Complete y envíe su registro de votante a la oficina electoral de su estado."
+download = "Descargue el formulario (PDF)"
+e-mail = "Envíeme el formulario en PDF"
+link = "También puede inscribirse por internet en el sitio web electoral de %state_name% (en inglés)."
 
 [in_person]
-body = "%state_name% requiere que sus residentes se inscriban para votar en persona en su oficina electoral local."
-link = "Visite el sitio web de la oficina electoral de %state_name% para averiguar cómo registrarse para votar"
+body = "Inscríbase en persona en la oficina electoral local. Para averiguar cómo inscribirse," 
+link = "visite el sitio web de la oficina electoral de %state_name%"
 
 [not_needed]
-heading = "No requiere estar registrado(a) para votar"
-body = "%state_name% solo requiere que se presente un documento de identificación personal válido en su centro de votación."
-link = "Ver la guía para votar en %state_name%"
+heading = "No necesita estar registrado para votar en %state_name%"
+body = "Presente un documento de indentificación válido en su lugar de votación. Para más información sobre cómo votar." 
+link = "Visite el sitio web electoral de %state_name%."
 
 [online]
-body = "Los residentes de %state_name% pueden inscribirse para votar por Internet."
-link = "Regístrese por internet en el sitio web electoral de %state_name%"
+body = "  "
+link = "Empiece su inscripción por internet en el sitio web electoral de %state_name%."
