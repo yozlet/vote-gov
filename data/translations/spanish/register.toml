@@ -14,8 +14,8 @@ link = "visite el sitio web de la oficina electoral de %state_name%"
 
 [not_needed]
 heading = "No necesita estar registrado para votar en %state_name%"
-body = "Presente un documento de indentificación válido en su lugar de votación. Para más información sobre cómo votar," 
-link = "visite el sitio web electoral de %state_name%."
+body = "Presente un documento de indentificación válido en su lugar de votación. Para más información sobre cómo votar." 
+link = "Visite el sitio web electoral de %state_name%."
 
 [online]
 body = "  "
