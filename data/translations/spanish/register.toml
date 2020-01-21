@@ -1,5 +1,5 @@
 heading = "Inscríbase para votar"
-english_only = "(en inglés)"
+english_only = "(en inglés)."
 select_spanish = "- seleccione la opción para español"
 
 [by_mail]
@@ -19,4 +19,4 @@ link = "Visite el sitio web electoral de %state_name%."
 
 [online]
 body = "  "
-link = "Empiece su inscripción por internet en el sitio web electoral de %state_name%."
+link = "Empiece su inscripción por internet en el sitio web electoral de %state_name%"
