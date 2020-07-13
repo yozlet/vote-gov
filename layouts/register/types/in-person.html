@@ -1,1 +1,24 @@
 {{ partial "in-person.html" . }}
+
+<!-- Register BEGIN -->
+<!--<div class="grid-container page-inner main-content">
+    <header>
+      <h1>
+        {{ replace $translation.register.heading "%state_name%" ( title .Title ) }}
+      </h1>
+    </header>
+    <p class="usa-intro">
+      {{ replace $translation.register.in_person.body "%state_name%" ( title .Title ) }}
+    </p>
+    <p>
+      <a href="{{ .Params.external_link }}">
+        {{ replace $translation.register.in_person.link "%state_name%" ( title .Title ) }}
+        {{ if and (eq $.Site.Params.language "spanish") (eq .Params.english_only true) }}
+          {{ $translation.register.english_only }}
+        {{ else }} {{ end }}
+      </a>
+    </p>-->
+   <!--Don't need {{ partial "accordions.html" . }} -->
+  <!--</div>-->
+  <!-- Register END -->
+  
